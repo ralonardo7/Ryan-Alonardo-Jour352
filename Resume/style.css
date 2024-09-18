@@ -1,9 +1,14 @@
+/* Styles for my resume */
+
+/* Main style */
+
 BODY {font-family: 'Open Sans', arial, sans-serif;
     font-size: 1em; 
     color: #444; 
     font-weight: 400;
-
 }
+
+/* My name */
 
 H1 {
 font-size:3em;
@@ -12,4 +17,46 @@ text-align:center;
 color:#33485e;
 }
 
+/* My school */
 
+STRONG {
+
+color: #33485e;
+text-transform: uppercase;
+font-size: 1.5em;
+}
+
+/* section titles */
+
+H2 {
+font-size: 1.5em;
+text-transform: uppercase;
+background-color: #33485e;
+color: #fff;
+
+}
+
+/* job titles */
+
+H3 {
+font-weight: bold;
+font-size: 1.5em;
+
+}
+
+/* Job organization */
+
+H4 {
+font-weight: 400;
+font-size: 1.5em;
+
+}
+
+/* Job dates */
+
+H5 {
+font-weight: 400;
+font-size: 1em;
+font-style: italic;
+
+}
