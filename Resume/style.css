@@ -8,37 +8,61 @@ BODY {font-family: 'Open Sans', arial, sans-serif;
     font-weight: 400;
 }
 
+#container {
+    width: 100%;           
+    max-width: 1200px;   
+    margin: 0 auto;      
+    padding-bottom: 50px; 
+}
+
 /* My name */
 
-H1 {
+#name {
 font-size:3em;
 text-transform:uppercase;
 text-align:center;
 color:#33485e;
+border-bottom: 1px solid #33485e;
+width: 60%;
+min-width: 300px; 
+margin: 0 auto;
 }
 
 /* My school */
 
-STRONG {
+#title {
 
 color: #33485e;
 text-transform: uppercase;
 font-size: 1.5em;
+font-weight: 600; 
+text-align: center; 
+margin: 20px 0 0 0;
+}
+
+.top {
+ margin: 10px 0;
+ width: 60%;          
+ min-width: 300px;   
+ margin: 0 auto;      
+ margin-bottom: 30px;  
 }
 
 /* section titles */
 
-H2 {
+.sectionheader {
 font-size: 1.5em;
 text-transform: uppercase;
 background-color: #33485e;
 color: #fff;
-
+margin: 20px 0 10px 0;
+width: 70%;
+min-width: 300px;
 }
 
 /* job titles */
 
-H3 {
+.jobtitle {
 font-weight: bold;
 font-size: 1.5em;
 
@@ -46,17 +70,36 @@ font-size: 1.5em;
 
 /* Job organization */
 
-H4 {
+.organization {
 font-weight: 400;
-font-size: 1.5em;
+font-size: 1.25em;
 
 }
 
 /* Job dates */
 
-H5 {
+.date {
 font-weight: 400;
 font-size: 1em;
 font-style: italic;
+margin: 2px 0 0 0;
 
+}
+
+.menu {
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+}
+
+#degrees {
+    margin: 5px 0 0 0;  
+}
+
+#do {
+    margin: 5px 0 0 0;  
 }
