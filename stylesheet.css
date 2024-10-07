@@ -1,0 +1,137 @@
+#content {
+    margin: 0 auto;
+    width: 900px;
+  }
+
+  .masthead {
+    background-color: #003366; /* Dark blue background */
+    color: #ffffff; /* White text */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 5px solid #ffcc00; /* Gold border */
+    text-align: center;
+}
+
+.masthead .logo img {
+    height: 60px; /* Adjust size of the logo */
+    width: auto;
+}
+
+.masthead .title h1 {
+    font-family: 'Georgia', serif; /* Elegant, serif font */
+    font-size: 2.5em; /* Large font for the title */
+    margin: 0;
+}
+
+.masthead .title p {
+    font-family: 'Arial', sans-serif; /* Simple, sans-serif font for tagline */
+    font-size: 1.2em; /* Tagline size */
+    margin: 0;
+    color: #ffcc00; /* Gold color for the tagline */
+}
+
+.headline {
+    font-family: 'Helvetica', sans-serif; /* Helvetica with sans-serif fallback */
+    font-size: 2.5em; /* Adjusted size for visibility */
+    color: #003366; /* Dark blue color */
+    text-align: center; /* Center alignment */
+    margin-top: 20px; /* Space above */
+    padding-bottom: 10px; /* Space below */
+    border-bottom: 2px solid #ffcc00; /* Gold bottom border */
+}
+
+/* Byline Styles */
+#byline {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #555555; /* Subtle gray color */
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+/* Body Text Styles */
+.body-text {
+    font-family: 'Georgia', serif; /* Georgia font for body text */
+    font-size: 13px; /* Size of the body text */
+    color: #333333; /* Dark gray for readability */
+    line-height: 1.5; /* Improved line spacing */
+    margin: 15px 20px; /* Margins for body text */
+}
+
+/* Image and Caption Styles */
+.photo {
+    text-align: center; /* Center-align images */
+    margin: 20px 0; /* Space around the images */
+}
+
+.photo img {
+    max-width: 100%; /* Ensure the images fit within the content area */
+    height: auto; /* Maintain image aspect ratio */
+    border: 2px solid #cccccc; /* Add a subtle border around images */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+.photo figcaption {
+    font-family: Helvetica, sans-serif; /* Caption font */
+    font-size: 12px; /* Caption size */
+    font-style: italic; /* Italic style */
+    color: #666666; /* Light gray for captions */
+    margin-top: 8px; /* Space between image and caption */
+}
+
+/* Pull Quote Styles */
+.pull-quote {
+    font-family: 'Georgia', serif; /* Elegant font for the pull quote */
+    font-size: 1.8em; /* Large font size for emphasis */
+    font-style: italic; /* Italic to highlight the quote */
+    color: #003366; /* Dark blue color to match headline */
+    text-align: center; /* Centered alignment */
+    margin: 30px 20px; /* Margin for space around the quote */
+    padding: 20px; /* Padding for breathing space */
+    border-left: 5px solid #ffcc00; /* Gold left border for emphasis */
+    background-color: #f9f9f9; /* Light background for contrast */
+    line-height: 1.4; /* Line height for readability */
+}
+
+/* Read More Section */
+#read-more {
+    margin-top: 30px; /* Space above the section */
+    padding: 20px; /* Padding for space inside */
+    background-color: #f0f8ff; /* Light background color */
+    border-top: 2px solid #003366; /* Top border to separate section */
+}
+
+#read-more h3 {
+    font-family: 'Helvetica', sans-serif; /* Heading font */
+    font-size: 1.5em; /* Size for heading */
+    color: #003366; /* Dark blue color */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+#read-more ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+#read-more li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+#read-more a {
+    font-family: 'Helvetica', sans-serif; /* Link font */
+    font-size: 1em; /* Regular font size */
+    color: #007acc; /* Link color (blue) */
+    text-decoration: none; /* Remove underline */
+}
+
+#read-more a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #003366; /* Dark blue on hover */
+}
+
+
