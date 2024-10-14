@@ -1,0 +1,104 @@
+Jour652: Midterm
+Part 1: Q&A
+
+Directions:
+
+1.  Use a text editor (like ATOM) to complete this assignment.
+
+2. This assignment is open book.
+
+3.  Answer every question.
+
+4.  If you don't understand what I'm asking for on a question, please ask me.
+
+5. When you are done, please save your document as “your-name-midterm-pt1.txt” and submit on ELMS.  Also, let me know you have completed the first portion of your midterm.
+
+****
+
+Questions
+
+1.  In the sentence below, put in the necessary code that would allow users to click on the word Google and open Google's homepage in a new browser:
+
+Google is the best search engine in the world.
+
+<a href="https://www.google.com" target="_blank">Google</a> is the best search engine in the world.
+
+
+2.  Describe the purpose of a DIV tag.
+
+The <div> tag in HTML is a block-level element used to group content together for styling or layout purposes. It helps divide a webpage into different sections, making it easier to manage and apply styles using CSS. For example, when you assign a class or ID to a <div>, you can apply specific styles to that section of the page.
+
+
+3.  Write out the basic structure of an HTML page, putting the basic tags in the correct position.  (Note: you don't need to connect it to a stylesheet or include DIV tags or anything like that).
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+</head>
+<body>
+
+    <h1>Hello, World!</h1>
+    <p>This is a basic HTML page structure.</p>
+
+</body>
+</html>
+
+
+4.  There are two main "areas" or "sections" in the basic structure of an HTML page. In which area would you put a link to a stylesheet?
+
+A link to a stylesheet should be placed in the <head> section of an HTML page. This is because the <head> section contains meta-information about the document, including links to external resources like CSS files, which should be loaded before the page content is rendered.
+
+5.  In which main "area" or "section" of an HTML page would you put text, images or DIV tags?
+
+Text, images, and <div> tags should be placed in the <body> section of an HTML page. The <body> section is where all the structural and visual elements of the webpage are located.
+
+6.  In the space below, put one DIV tag with a class of graphicbox and a second DIV tag with an ID of name.
+
+<div class="graphicbox">
+    <!-- Content for graphicbox -->
+</div>
+
+<div id="name">
+    <!-- Content for name -->
+</div>
+
+
+7.  In the space below, put one DIV tag with an ID of apples and a class of fruit.
+
+
+<div id="apples" class="fruit">
+    <!-- Content for apples -->
+</div>
+
+
+8.  In the space below, write the correct CSS code to target a DIV with a class of fruit.  Make the color of the text black (#000000).
+
+.fruit {
+    color: #000000;
+}
+
+
+9.  What tag would we use to include an image on an HTML page? Just give me the name of the tag, you don't have to write out all the code.
+
+The tag used to include an image on an HTML page is the <img> tag.
+
+10.  Why do we use media queries?
+
+We use media queries in CSS to make websites responsive, meaning they adapt to different screen sizes, orientations, and device types. Media queries allow developers to apply different styles based on the characteristics of the user's device.
+
+
+11. What is the main difference between a serif and a sans-serif font?
+
+The key distinction is that serif fonts have decorative strokes at the ends of letters, while sans-serif fonts do not.
+
+12. Which of the following is a hexadecimal code?
+#FFCC33
+123,543,242
+101010101
+-213
+
+The hexadecimal code from the options provided is #FFCC33.
