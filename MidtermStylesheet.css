@@ -13,34 +13,60 @@ body {
     line-height: 1.6;
 }
 
-/* Masthead Styling */
+/* Enhanced Masthead Styles */
 #masthead {
-    background-image: url('file:///Users/ryanalonardo/Documents/GitHub/Ryan-Alonardo-Jour352/Custom%20Size%20%E2%80%93%208.png'); /* Replace with your banner image path */
-    background-size: cover; /* Ensure the background image covers the entire area */
-    background-position: center; /* Center the image */
-    text-align: left; /* Change to left align */
-    padding: 50px 20px; /* More padding for a spacious feel */
-    color: white; /* Text color */
-    position: relative; /* Positioning for overlay effect */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    background: linear-gradient(135deg, rgba(94, 75, 140, 0.85), rgba(56, 35, 81, 0.95)); /* Add a diagonal gradient */
+    color: rgba(240, 240, 255, 1); /* Keep text light for contrast */
+    text-align: left; /* Align left */
+    padding: 50px 20px; /* Increase padding for more space */
+    border-bottom: 2px solid rgba(240, 240, 255, 0.3); /* Add a subtle border at the bottom */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow to make it pop */
+    position: relative;
+    overflow: hidden; /* Ensure any overflowing elements stay contained */
 }
 
-/* Masthead Headline */
+/* Decorative Geometric Element */
+#masthead::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(240, 240, 255, 0.1);
+    border-radius: 50%; /* Create a circular shape */
+    top: -50px;
+    right: -50px;
+    z-index: 0;
+}
+
+/* Masthead Title */
 #masthead h1 {
-    font-size: 36px; /* Adjust as needed */
-    font-family: 'Georgia', serif; /* Elegant serif font */
-    margin-bottom: 10px; /* Space between headline and subheading */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Soft shadow for better readability */
+    font-size: 48px; /* Larger font size for the main title */
+    font-weight: bold;
+    z-index: 2; /* Ensure text is on top of the geometric shape */
+    position: relative;
+    animation: fadeIn 1.5s ease-out; /* Add a fade-in animation */
 }
 
 /* Masthead Subheading */
-#masthead .subheading {
-    font-size: 18px; /* Slightly smaller */
-    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
-    font-weight: 300; /* Light font weight */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Soft shadow for better readability */
-    color: white; /* Change this color to improve visibility */
+#masthead p.subheading {
+    font-size: 20px; /* Slightly larger subheading */
+    font-style: italic;
+    color: rgba(240, 240, 255, 0.9); /* Slight transparency for a softer look */
+    margin-top: 10px;
+    position: relative;
+    z-index: 2; /* Keep subheading on top of the geometric element */
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Text starts 20px lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Ends in the correct position */
+    }
 }
 
 /* Page Wrapper */
@@ -80,12 +106,19 @@ body {
 h2 {
     font-family: 'Arial', sans-serif;
     font-size: 28px;
-    color: #333;
+    color: rgba(94, 75, 140, 1); /* Masthead background color for the subheader text */
     margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+    font-family: 'Arial', sans-serif; /* Matching sans-serif font for consistency */
+    font-weight: bold; /* Make subheaders bold */
+}
+
+h2:hover {
+    color: rgba(56, 35, 81, 1); /* Darker variant of the background color on hover */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Paragraph Text */
@@ -100,13 +133,14 @@ blockquote {
     font-size: 24px; /* Increased font size */
     font-weight: bold; /* Bold text */
     font-style: italic;
-    color: #8c54ff; /* Maintain the same color */
-    border-left: 4px solid #8c54ff; /* Left border for emphasis */
+    color: #333; /* Darker text color for contrast */
+    border-left: 4px solid rgba(94, 75, 140, 1); /* Left border matching the masthead color */
     padding: 15px 20px; /* More padding for better spacing */
     margin: 20px 0; /* Spacing above and below */
-    background-color: rgba(140, 84, 255, 0.1); /* Light background color for contrast */
+    background-color: rgba(94, 75, 140, 0.1); /* Light background to match the masthead */
     border-radius: 8px; /* Rounded corners for a softer look */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Georgia', serif; /* Serif font for elegance */
 }
 
 .story-image {
@@ -148,8 +182,8 @@ ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #8c54ff;
-    color: white;
+    background-color: linear-gradient(135deg, rgba(94, 75, 140, 0.9), rgba(56, 35, 81, 0.9)); /* Gradient background matching the masthead */
+    color: #fff; /* White text color for contrast */
     margin-top: 40px;
     font-size: 14px;
 }
