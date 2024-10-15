@@ -133,7 +133,7 @@ blockquote {
     font-size: 24px; /* Increased font size */
     font-weight: bold; /* Bold text */
     font-style: italic;
-    color: #333; /* Darker text color for contrast */
+    color: rgba(94, 75, 140, 1); /* Masthead background color for the subheader text */
     border-left: 4px solid rgba(94, 75, 140, 1); /* Left border matching the masthead color */
     padding: 15px 20px; /* More padding for better spacing */
     margin: 20px 0; /* Spacing above and below */
