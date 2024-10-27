@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.headline {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.byline {
+    font-size: 1.2em;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chapter-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.chapter-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.photo-section {
+    text-align: center;
+}
+
+.photo-caption {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.optional-columns .col-md-4 {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.9em;
+}
