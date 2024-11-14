@@ -1,0 +1,635 @@
+/* Resetting some basic styling for a clean start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main content centered */
+.main-content {
+    width: 80%; /* Adjust the width as needed, can also use 'max-width' */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Optional, for spacing */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+}
+
+h3 {
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+}
+
+/* Main container for all content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Page Topper */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, rgba(255, 111, 97, 0.8), rgba(255, 81, 68, 0.9), rgba(255, 255, 255, 0.9)); /* Vibrant gradients */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    background-size: cover;
+    animation: gradientAnimation 15s ease-in-out infinite; /* Gradient background animation */
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Complex Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(120deg, rgba(255, 111, 97, 0.8), rgba(255, 81, 68, 0.9), rgba(255, 255, 255, 0.9));
+    }
+    50% {
+      background: linear-gradient(120deg, rgba(255, 61, 28, 0.8), rgba(255, 82, 50, 0.8), rgba(235, 235, 235, 0.9));
+    }
+    100% {
+      background: linear-gradient(120deg, rgba(255, 111, 97, 0.8), rgba(255, 81, 68, 0.9), rgba(255, 255, 255, 0.9));
+    }
+  }
+  
+  /* Hero Text Area */
+  .hero-text {
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Title Styling */
+  .hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: titleReveal 3s ease-out 0.5s forwards; /* Title reveal animation */
+    opacity: 0;
+  }
+  
+  @keyframes titleReveal {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(-200px);
+    }
+    60% {
+      opacity: 0.7;
+      transform: scale(1.1) translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  /* Byline Styling */
+  .hero-text .byline {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: bylineFadeIn 3s ease-out 1s forwards; /* Byline fade-in and move-up animation */
+  }
+  
+  @keyframes bylineFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Byline Hover Effects */
+  .hero-text .byline a {
+    color: #ffb830; /* Golden yellow for byline links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hero-text .byline a:hover {
+    color: #f4a261; /* Slightly darker gold on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Adding Background and Animated Texture (Overlay Effect) */
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Subtle textured overlay */
+    opacity: 0.1;
+    pointer-events: none;
+    animation: textureMove 10s linear infinite;
+  }
+  
+  @keyframes textureMove {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(100px) translateY(100px);
+    }
+  }
+  
+  /* Parallax Scroll Effect for Hero Section */
+  .hero {
+    background-attachment: fixed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero-text h1 {
+      font-size: 4rem;
+    }
+  
+    .hero-text .byline {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+  
+    .hero-text .byline {
+      font-size: 1.2rem;
+    }
+  }
+  
+/* Sidebar Container */
+.sidebar {
+    background-color: #263847; /* Slightly lighter dark blue */
+    padding: 30px;
+    border-radius: 15px;
+    color: #eaf0f1; /* Light text for readability */
+    position: relative;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+/* Decorative Border Accent */
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 12px;
+    border: 2px solid #ffb830; /* Golden-yellow outline */
+    opacity: 0.8;
+    z-index: 1;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #ffb830; /* Golden yellow for emphasis */
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Soft bottom border */
+    z-index: 2;
+}
+
+/* Background Overlay */
+.sidebar .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+/* Sidebar Content */
+.sidebar p {
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #eaf0f1;
+    position: relative;
+    z-index: 2;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    color: #ffb830; /* Golden yellow */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.sidebar a:hover {
+    color: #f4a261; /* Slightly muted gold */
+    transform: translateX(4px);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar Image Styling */
+.sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.sidebar img:hover {
+    transform: scale(1.05); /* Gentle zoom */
+}
+
+/* Sidebar Hover Lift */
+.sidebar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow */
+}
+
+/* Sidebar Responsive Adjustments */
+@media (max-width: 1024px) {
+    .sidebar {
+        padding: 25px;
+    }
+
+    .sidebar h2 {
+        font-size: 2rem;
+    }
+
+    .sidebar p {
+        font-size: 1.05rem;
+    }
+
+    .sidebar a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 1.8rem;
+    }
+
+    .sidebar p {
+        font-size: 1rem;
+    }
+
+    .sidebar a {
+        font-size: 0.95rem;
+    }
+}
+  
+  /* Article Content */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Enhanced Subhead (h1) */
+h1 {
+    font-family: 'Poppins', sans-serif; /* Modern sans-serif for a bold look */
+    font-size: 2.5rem; /* Larger font for impact */
+    font-weight: 700; /* Strong weight for emphasis */
+    color: #2c3e50; /* Dark color for readability */
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Adds spacing for a modern look */
+    position: relative; /* For pseudo-element placement */
+    margin: 40px 0 20px; /* Balanced spacing around */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Decorative Underline */
+h1::after {
+    content: '';
+    display: block;
+    width: 60px; /* Fixed width for the underline */
+    height: 4px; /* Slightly thicker line */
+    background-color: #3498db; /* Matches color theme */
+    margin-top: 8px; /* Space from text */
+    transition: width 0.4s ease-in-out; /* Animation on hover */
+    transform: translateX(5px); /* Offset for added effect */
+}
+
+/* Hover Effect */
+h1:hover {
+    color: #3498db; /* Color change on hover */
+    transform: scale(1.03); /* Slight zoom for interactivity */
+}
+
+h1:hover::after {
+    width: 100px; /* Extend underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h1::after {
+        width: 50px;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Pull Quote Container */
+.pull-quote {
+    background: #f5f5f5; /* Soft, light gray background for contrast */
+    padding: 30px 40px; /* Generous padding for whitespace */
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #333; /* Dark text for readability */
+    border-left: 5px solid #3498db; /* Bold blue left border */
+    margin: 40px 0;
+    position: relative;
+    border-radius: 8px; /* Smooth, rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Subtle Hover Effects */
+.pull-quote:hover {
+    background-color: #eaf6fb; /* Slightly lighter background on hover */
+    transform: scale(1.02); /* Subtle zoom effect */
+}
+
+/* Decorative Quote Mark */
+.pull-quote::before {
+    content: '“';
+    font-size: 4rem; /* Large, decorative opening quote */
+    color: #3498db; /* Match the left border color */
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    opacity: 0.1; /* Light opacity for a subtle effect */
+}
+
+/* Pull Quote Footer (Source) */
+.pull-quote footer {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1rem;
+    color: #3498db; /* Matches border and quote mark color */
+    letter-spacing: 0.5px; /* Adds spacing for clarity */
+}
+
+/* Animated Underline on Footer Hover */
+.pull-quote footer:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* Responsive Design for Pull Quote */
+@media (max-width: 768px) {
+    .pull-quote {
+        padding: 20px 30px;
+        font-size: 1.1rem;
+    }
+
+    .pull-quote::before {
+        font-size: 3rem;
+        top: -10px;
+        left: 5px;
+    }
+}
+
+/* Image Styling */
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Slightly round the corners for a more modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow with more depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+    object-fit: cover; /* Ensures the image covers the area of its container without distortion */
+    margin-top: 20px;
+}
+
+/* Hover Effects */
+img.img-fluid:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    filter: brightness(1.1); /* Brightens the image slightly */
+}
+
+/* Rounded Borders with Hover */
+img.rounded {
+    border-radius: 50%; /* Makes the image circular */
+    transition: all 0.3s ease-in-out;
+}
+
+img.rounded:hover {
+    transform: scale(1.1); /* Slight zoom effect for circular images */
+    filter: brightness(1.2); /* Increased brightness on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Light shadow around the image */
+}
+
+/* Parallax Effect (for background images in sections) */
+.parallax {
+    position: relative;
+    background-image: url('your-image-url.jpg');
+    background-attachment: fixed; /* Creates the parallax scrolling effect */
+    background-position: center center;
+    background-size: cover;
+    height: 400px; /* Adjust as needed */
+}
+
+/* Figure and Caption Styling */
+figure {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: translateY(10px); /* Start off lower */
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+figure:hover figcaption {
+    transform: translateY(0); /* Slides up the caption */
+    opacity: 1; /* Shows the caption */
+}
+
+/* Borders and Hover Effect for Images in Galleries or Grids */
+.gallery-img {
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for hover */
+    border-color: #f39c12; /* Border color change on hover */
+}
+
+/* Fancy Border Effect for Specific Images */
+.img-border-effect {
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #ff6347, #f39c12, #3498db);
+    border-image-slice: 1;
+    transition: border-image 0.3s ease;
+}
+
+.img-border-effect:hover {
+    border-image: linear-gradient(45deg, #f39c12, #ff6347, #3498db); /* Color change on hover */
+}
+
+/* Embedded iframe (charts and maps) */
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Code Red Days and Health Statistics */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.stats p {
+    margin-right: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .pull-quote {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
