@@ -1,0 +1,298 @@
+/* General Body Styling */
+body {
+    font-family: 'Barlow', sans-serif; /* Sleek sports-like font */
+    background: linear-gradient(180deg, #0d1b2a, #16253d, #111119);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+  
+  /* Header Section */
+  header {
+    background: linear-gradient(90deg, #ff5733, #ffd700);
+    padding: 30px 10%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header h1 {
+    font-size: 3.5em;
+    font-family: 'Orbitron', sans-serif; /* Bold, futuristic NBA-style font */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #111119;
+    text-shadow: 3px 3px #000;
+    animation: bounce-in 2s ease-in-out infinite alternate;
+  }
+  
+  header h1 span {
+    color: #f5f5f5;
+    text-shadow: 3px 3px #ff5733;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    height: 300px;
+    width: 300%;
+    background: radial-gradient(circle, rgba(255, 87, 51, 0.7), rgba(17, 17, 25, 0) 70%);
+    animation: pulse 5s infinite;
+  }
+  
+  /* Navbar Styling */
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #16253d;
+    padding: 15px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-top: 3px solid #ff5733;
+  }
+  
+  nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background: #ff5733;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav a:hover {
+    background: #ffd700;
+    color: #111119;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 215, 0, 0.7);
+  }
+  
+  /* Section Headings (Subheads) */
+
+  h2 {
+    font-family: 'Oswald', sans-serif; /* Modern sans-serif with structure */
+    font-size: 2.2em; /* Smaller size for a more professional appearance */
+    color: #ffcc00; /* Golden yellow for a professional look */
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #ff5733, #ffcc00); /* Slight gradient effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    animation: fade-in 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #ff5733; /* Red accent underline */
+  }
+  
+/* Pull Quotes - More readable and toned down */
+blockquote {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 1.8em; /* Adjusted size for better readability */
+    font-style: italic;
+    color: #ffffff; /* Text color */
+    background: linear-gradient(145deg, #3e4a59, #5a6e7b); /* Subtle background gradient */
+    padding: 30px 40px;
+    border: 2px solid #ff5733; /* Border with a soft red hue */
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    animation: zoom-in 1.5s ease;
+    box-shadow: inset 0 0 15px rgba(255, 87, 51, 0.4), 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  blockquote::before {
+    content: '“';
+    font-size: 4em;
+    color: #ff5733; /* Slight red hue for the opening quote */
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  blockquote::after {
+    content: '”';
+    font-size: 4em;
+    color: #ffcc00; /* Golden hue for closing quote */
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  blockquote-footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffcc00; /* Footer text color */
+    font-size: 1.2em;
+    margin-top: 15px;
+    font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Adjustments for Readability */
+  p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 15px 10%;
+    color: #ffffff; /* Ensures paragraph text remains white */
+  }
+  
+  /* Image Container */
+  .image-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .image-container img {
+    max-width: 90%;
+    height: auto;
+    border: 8px solid #ff5733;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(255, 87, 51, 0.7);
+  }
+  
+  .image-caption {
+    color: #ffd700;
+    font-size: 1em;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* Links */
+  a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  a:hover {
+    color: #ff5733;
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    background: #0d1b2a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 10%;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+  }
+  
+  /* Animations */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce-in {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2.5em;
+    }
+  
+    nav a {
+      font-size: 0.9em;
+      padding: 8px 12px;
+    }
+  
+    h2 {
+      font-size: 1.8em;
+    }
+  
+    blockquote {
+      font-size: 1.2em;
+    }
+  }
+
+  /* Styling for Lists (Unordered and Ordered) */
+ul, ol {
+    color: #ffffff; /* Makes all list items text white */
+    margin: 15px 10%; /* Adjust the margins to match the layout */
+    padding-left: 20px; /* Adds space to the left of the list */
+  }
+  
+  /* Additional Styling for List Items */
+  li {
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Adds space between list items */
+  }
+
+  iframe {
+    background-color: white !important;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+      
